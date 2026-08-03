@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Cores principais - Verde agrícola */
+    --background: 45 30% 97%;
+    --foreground: 140 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 25% 15%;
+
+    /* Verde principal - cor da marca */
+    --primary: 142 52% 28%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Verde claro para superfícies */
+    --secondary: 142 30% 92%;
+    --secondary-foreground: 142 52% 18%;
+
+    --muted: 45 20% 93%;
+    --muted-foreground: 140 15% 40%;
+
+    /* Verde vibrante para destaque */
+    --accent: 142 65% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 142 20% 85%;
+    --input: 142 20% 85%;
+    --ring: 142 52% 28%;
+
+    --radius: 0.75rem;
+
+    /* Cores customizadas para a landing */
+    --whatsapp: 142 70% 45%;
+    --whatsapp-hover: 142 70% 38%;
+    --embrapa: 210 85% 35%;
+    --gold: 42 85% 55%;
+    --earth: 28 45% 35%;
+    --leaf-light: 142 40% 95%;
+    --hero-overlay: 140 30% 10%;
+
+    /* Gradientes */
+    --gradient-hero: linear-gradient(135deg, hsl(142 52% 28%) 0%, hsl(142 40% 22%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(142 65% 38%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(45 30% 97%) 0%, hsl(142 30% 96%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 85% 55%) 0%, hsl(38 80% 48%) 100%);
+
+    /* Sombras */
+    --shadow-soft: 0 4px 20px -4px hsl(142 30% 20% / 0.12);
+    --shadow-cta: 0 8px 30px -6px hsl(142 70% 35% / 0.4);
+    --shadow-card: 0 10px 40px -10px hsl(140 20% 20% / 0.15);
+    --shadow-elevated: 0 20px 50px -12px hsl(140 25% 15% / 0.2);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 140 25% 8%;
+    --foreground: 45 30% 95%;
+    --card: 140 20% 12%;
+    --card-foreground: 45 30% 95%;
+    --popover: 140 20% 12%;
+    --popover-foreground: 45 30% 95%;
+    --primary: 142 55% 45%;
+    --primary-foreground: 140 25% 8%;
+    --secondary: 142 25% 18%;
+    --secondary-foreground: 142 30% 90%;
+    --muted: 140 20% 15%;
+    --muted-foreground: 140 15% 60%;
+    --accent: 142 60% 50%;
+    --accent-foreground: 140 25% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 140 20% 20%;
+    --input: 140 20% 20%;
+    --ring: 142 55% 45%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24 px-4;
+  }
+
+  .container-landing {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(42 85% 55%) 0%, hsl(38 80% 48%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-elevated hover:-translate-y-1;
+  }
+
+@keyframes pulse-whatsapp {
+  0% {
+    /* Começa suave, sem sobressaltos */
+    box-shadow: 0 0 0 0 hsl(142 90% 45% / 0.35);
+  }
+  30% {
+    /* Expande levemente até 8px e desaparece suavemente */
+    box-shadow: 0 0 0 8px hsl(142 70% 45% / 0);
+  }
+  100% {
+    /* Mantém o botão totalmente parado por 70% do tempo total */
+    box-shadow: 0 0 0 0 hsl(142 70% 45% / 0);
+  }
+}
+
+.whatsapp-pulse {
+  /* 6s torna a animação extremamente lenta e agradável */
+  animation: pulse-whatsapp 2s ease-in-out infinite !important;
+}
+
+  .float-animation {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Scroll suave */
+html {
+  scroll-behavior: smooth;
+}
