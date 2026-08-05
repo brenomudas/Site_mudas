@@ -88,12 +88,6 @@ const GallerySection = () => {
           ))}
         </div>
 
-        {/* Mango trees info */}
-        <div className="mt-8 text-center">
-          <div className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500/15 rounded-full border border-orange-500/30">
-            <span className="text-orange-600 font-semibold">🥭 Também trabalhamos com mudas de mangueira!</span>
-          </div>
-        </div>
 
         <Dialog open={selectedImage !== null} onOpenChange={closeLightbox}>
           <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">

@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AuthoritySection from "@/components/AuthoritySection";
 import ProductSection from "@/components/ProductSection";
+import OtherProductsSection from "@/components/OtherProductsSection";
 import NematodesSection from "@/components/NematodesSection";
 import DifferentialsSection from "@/components/DifferentialsSection";
 import LogisticsSection from "@/components/LogisticsSection";
@@ -29,6 +30,7 @@ const Index = () => {
         <FAQSection />
         <FinalCTASection />
         <GallerySection />
+        <OtherProductsSection />
       </main>
       <Footer />
       
