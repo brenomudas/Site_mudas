@@ -56,7 +56,7 @@ const Header = () => {
                 alt="São Francisco Mudas" 
                 className={`transition-all duration-300 object-contain ${
                   isScrolled 
-                    ? "h-12 sm:h-14 lg:h-16 w-auto" 
+                    ? "h-14 sm:h-16 lg:h-20 w-auto" 
                     : "h-14 sm:h-16 md:h-20 lg:h-24 w-auto bg-white/95 rounded-xl p-2 sm:p-2.5 shadow-md border border-white/30"
                 }`}
               />
