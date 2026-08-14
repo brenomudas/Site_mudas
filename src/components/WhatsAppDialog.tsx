@@ -10,17 +10,22 @@ interface WhatsAppDialogProps {
 const WhatsAppDialog = ({ open, onClose, whatsappUrl }: WhatsAppDialogProps) => {
   if (!open) return null;
 
-  const handleChoice = (isProdutor: boolean) => {
-    if (isProdutor) {
+  const handleChoice = (choice: boolean) => {
+    if (choice) {
       pushToDataLayer({
         event: "click_50pl",
         timestamp: new Date().toISOString(),
       });
-    }
 
-    // Open WhatsApp
-    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
-    onClose();
+      // Fecha o diálogo
+      onClose();
+
+      // Redireciona para o WhatsApp
+      window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+    } else {
+      // Apenas fecha o diálogo
+      onClose();
+    }
   };
 
   return createPortal(
@@ -57,12 +62,14 @@ const WhatsAppDialog = ({ open, onClose, whatsappUrl }: WhatsAppDialogProps) => 
         {/* Buttons */}
         <div className="px-6 pb-6 flex flex-col sm:flex-row gap-3">
           <button
+            type="button"
             onClick={() => handleChoice(true)}
             className="flex-1 bg-[hsl(var(--whatsapp))] hover:bg-[hsl(var(--whatsapp-hover))] text-white font-bold text-base md:text-lg py-3.5 px-6 rounded-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-cta"
           >
             ✅ Sim
           </button>
           <button
+            type="button"
             onClick={() => handleChoice(false)}
             className="flex-1 border-2 border-border text-foreground font-semibold text-base md:text-lg py-3.5 px-6 rounded-xl transition-all duration-200 hover:bg-muted hover:scale-[1.02] active:scale-[0.98]"
           >
