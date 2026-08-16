@@ -3,33 +3,33 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 
 const galleryImages = [
-  { src: "/gallery/foto-01.jpg", alt: "Plantas matrizes oriundas da EMBRAPA" },
-  { src: "/gallery/foto-02.jpg", alt: "Plantação de goiabeiras no campo" },
-  { src: "/gallery/foto-03.jpg", alt: "Vista panorâmica da plantação" },
-  { src: "/gallery/foto-04.jpg", alt: "Sistema de irrigação no viveiro" },
-  { src: "/gallery/foto-05.jpg", alt: "Goiabeiras em desenvolvimento" },
-  { src: "/gallery/foto-06.jpg", alt: "Mudas prontas para envio" },
-  { src: "/gallery/foto-07.jpg", alt: "Mudas em caixas de madeira" },
-  { src: "/gallery/foto-08.jpg", alt: "Mudas no caminhão de transporte" },
-  { src: "/gallery/foto-09.jpg", alt: "Vista aérea do viveiro São Francisco Mudas" },
-  { src: "/gallery/foto-10.jpg", alt: "Mudas organizadas em caixas plásticas" },
-  { src: "/gallery/foto-11.jpg", alt: "Mudas no caminhão coberto" },
-  { src: "/gallery/foto-12.jpg", alt: "Mudas em caixas azuis - Fazenda Beira Rio" },
-  { src: "/gallery/foto-13.jpg", alt: "Mudas em caixas de isopor para transporte" },
-  { src: "/gallery/foto-14.jpg", alt: "Interior do viveiro com irrigação" },
-  { src: "/gallery/foto-15.jpg", alt: "Estrutura do viveiro com mudas" },
-  { src: "/gallery/foto-16.jpg", alt: "Viveiro com múltiplos canteiros" },
-  { src: "/gallery/foto-17.jpg", alt: "Mudas jovens no viveiro" },
-  { src: "/gallery/foto-18.jpg", alt: "Mudas em caixas plásticas pretas" },
-  { src: "/gallery/foto-19.jpg", alt: "Lote de mudas preparadas" },
-  { src: "/gallery/foto-20.jpg", alt: "Mudas organizadas para expedição" },
-  { src: "/gallery/foto-21.jpg", alt: "Planta com 1 ano - floração" },
-  { src: "/gallery/foto-22.jpg", alt: "Goiabeira com 1 ano em produção" },
-  { src: "/gallery/foto-23.jpg", alt: "Planta adulta com 1 ano" },
-  { src: "/gallery/foto-24.jpg", alt: "Goiabeira desenvolvida no campo" },
-  { src: "/gallery/foto-25.jpg", alt: "Muda individual de goiabeira" },
-  { src: "/gallery/foto-26.jpg", alt: "Mudas embaladas em caixas" },
-  { src: "/gallery/foto-27.jpg", alt: "Mudas organizadas lado a lado" },
+  { src: "/gallery/foto-01.webp", alt: "Plantas matrizes oriundas da EMBRAPA" },
+  { src: "/gallery/foto-02.webp", alt: "Plantação de goiabeiras no campo" },
+  { src: "/gallery/foto-03.webp", alt: "Vista panorâmica da plantação" },
+  { src: "/gallery/foto-04.webp", alt: "Sistema de irrigação no viveiro" },
+  { src: "/gallery/foto-05.webp", alt: "Goiabeiras em desenvolvimento" },
+  { src: "/gallery/foto-06.webp", alt: "Mudas prontas para envio" },
+  { src: "/gallery/foto-07.webp", alt: "Mudas em caixas de madeira" },
+  { src: "/gallery/foto-08.webp", alt: "Mudas no caminhão de transporte" },
+  { src: "/gallery/foto-09.webp", alt: "Vista aérea do viveiro São Francisco Mudas" },
+  { src: "/gallery/foto-10.webp", alt: "Mudas organizadas em caixas plásticas" },
+  { src: "/gallery/foto-11.webp", alt: "Mudas no caminhão coberto" },
+  { src: "/gallery/foto-12.webp", alt: "Mudas em caixas azuis - Fazenda Beira Rio" },
+  { src: "/gallery/foto-13.webp", alt: "Mudas em caixas de isopor para transporte" },
+  { src: "/gallery/foto-14.webp", alt: "Interior do viveiro com irrigação" },
+  { src: "/gallery/foto-15.webp", alt: "Estrutura do viveiro com mudas" },
+  { src: "/gallery/foto-16.webp", alt: "Viveiro com múltiplos canteiros" },
+  { src: "/gallery/foto-17.webp", alt: "Mudas jovens no viveiro" },
+  { src: "/gallery/foto-18.webp", alt: "Mudas em caixas plásticas pretas" },
+  { src: "/gallery/foto-19.webp", alt: "Lote de mudas preparadas" },
+  { src: "/gallery/foto-20.webp", alt: "Mudas organizadas para expedição" },
+  { src: "/gallery/foto-21.webp", alt: "Planta com 1 ano - floração" },
+  { src: "/gallery/foto-22.webp", alt: "Goiabeira com 1 ano em produção" },
+  { src: "/gallery/foto-23.webp", alt: "Planta adulta com 1 ano" },
+  { src: "/gallery/foto-24.webp", alt: "Goiabeira desenvolvida no campo" },
+  { src: "/gallery/foto-25.webp", alt: "Muda individual de goiabeira" },
+  { src: "/gallery/foto-26.webp", alt: "Mudas embaladas em caixas" },
+  { src: "/gallery/foto-27.webp", alt: "Mudas organizadas lado a lado" },
 ];
 
 const GallerySection = () => {
@@ -81,13 +81,13 @@ const GallerySection = () => {
               <img
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300" />
             </div>
           ))}
         </div>
-
 
         <Dialog open={selectedImage !== null} onOpenChange={closeLightbox}>
           <DialogContent className="max-w-4xl w-full p-0 bg-black/95 border-none">

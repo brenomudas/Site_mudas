@@ -9,36 +9,32 @@ import { WhatsAppButton } from "./WhatsAppButton";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "O que é o porta-enxerto BRS Guaraçá?",
-      answer: "O BRS Guaraçá é um porta-enxerto híbrido desenvolvida pela EMBRAPA. Sua principal característica é a resistência ao nematoide das galhas (Meloidogyne enterolobii), que dizima pomares de goiaba convencionais em todo o Brasil."
+      question: "Por que a muda de goiaba enxertada no araçá / BRS Guaraçá é essencial?",
+      answer: "A muda de goiaba enxertada no porta-enxerto BRS Guaraçá (híbrido de araçazeiro desenvolvido pela EMBRAPA) é a única forma comprovada de proteger seu pomar contra o nematoide das galhas (Meloidogyne enterolobii). Ela combina a imunidade radicular do araçá com a altíssima produtividade das copas Paluma e Tailandesa."
     },
     {
-      question: "Qual a diferença entre muda enxertada e muda de pé-franco?",
-      answer: "A muda de pé-franco é produzida a partir de estaquia (copa da paluma) e não possui resistência a nematoides. A muda enxertada une as características produtivas da copa (Paluma) com a resistência do porta-enxerto (BRS Guaraçá), oferecendo o melhor dos dois mundos: alta produtividade com proteção contra a principal praga."
+      question: "Qual a diferença entre a muda de goiaba Paluma e a muda de goiaba Tailandesa enxertada?",
+      answer: "A muda de goiaba Paluma enxertada no araçá produz frutos de tamanho médio a grande com polpa vermelha intensa, sendo a mais plantada para a indústria e mercado in natura. Já a muda de goiaba tailandesa enxertada gera frutos gigantes (de 500g a 1kg) com polpa crocante, ideais para hortifrútis e feiras de alto valor agregado."
     },
     {
-      question: "As mudas já estão prontas para plantio no campo?",
-      answer: "Sim! Nossas mudas são comercializadas com 120 dias após a enxertia, medindo entre 30 a 40 cm de altura. Elas possuem sistema radicular bem desenvolvido e estão totalmente aptas para o plantio definitivo no campo."
+      question: "Como consultar o preço da muda de goiaba e comprar direto do viveiro?",
+      answer: "Para solicitar a tabela de preços e comprar muda de goiaba enxertada, basta clicar nos botões de WhatsApp do site. Nosso viveiro de mudas de goiaba oferece condições especiais para lotes comerciais e entregas agendadas."
     },
     {
-      question: "Qual o espaçamento recomendado para o plantio?",
-      answer: "O espaçamento mais utilizado para a goiabeira Paluma é de 6m x 4m (416 plantas/ha). Porém, o espaçamento ideal pode variar conforme o sistema de condução e o nível tecnológico adotado. Nossa equipe pode orientar sobre a melhor opção para seu caso."
+      question: "Qual a vantagem de comprar muda de goiaba enxertada em relação ao pé-franco?",
+      answer: "A muda de pé-franco (produzida por estaquia) é suscetível ao nematoide e pode morrer em poucos anos se o solo estiver contaminado. A muda de goiabeira enxertada no araçá BRS Guaraçá une a força produtiva da copa com a resistência do porta-enxerto, garantindo a longevidade do pomar por mais de 15 a 20 anos."
     },
     {
-      question: "Em quanto tempo as plantas começam a produzir?",
-      answer: "Com manejo adequado, as goiabeiras Paluma enxertadas no BRS Guaraçá iniciam a produção comercial com 12 meses após o plantio. A produção plena é alcançada a partir do terceiro ano."
+      question: "As mudas de goiaba chegam prontas para plantio?",
+      answer: "Sim! As mudas de goiaba Paluma e Tailandesa enxertadas saem do viveiro São Francisco com aproximadamente 120 dias pós-enxertia, medindo entre 30 e 40 cm de altura, com sistema radicular perfeitamente formado e aclimatadas para plantio imediato."
     },
     {
-      question: "Vocês entregam para todo o Brasil?",
-      answer: "Sim! Realizamos entregas para todos os estados brasileiros. As mudas são embaladas em caixas especiais que garantem a integridade durante o transporte. O frete é calculado conforme a quantidade e o destino."
+      question: "Como é feita a entrega da venda de mudas de goiaba para todo o Brasil?",
+      answer: "Trabalhamos com logística especializada no transporte de mudas frutíferas. As cargas são acondicionadas para garantir zero danos durante o trajeto até a sua propriedade rural ou fazenda."
     },
     {
-      question: "Qual a quantidade mínima para pedido?",
-      answer: "Para garantir a viabilidade logística e oferecer as melhores condições, trabalhamos com pedido mínimo. Entre em contato pelo WhatsApp para verificar a quantidade mínima e condições especiais para volumes maiores."
-    },
-    {
-      question: "As mudas vêm com alguma garantia?",
-      answer: "Garantimos a procedência e a qualidade fitossanitária de todas as nossas mudas. Trabalhamos com material genético original EMBRAPA e fornecemos orientações completas de plantio. As mudas acompanham nota fiscal e termo de conformidade."
+      question: "Em quanto tempo a muda de goiaba enxertada começa a produzir?",
+      answer: "Com manejo adequado e irrigação correta, a muda de goiaba enxertada no BRS Guaraçá começa a produzir seus primeiros frutos comerciais a partir do 12º mês pós-plantio."
     }
   ];
 
@@ -49,11 +45,10 @@ const FAQSection = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Perguntas{" "}
-              <span className="text-primary">Frequentes</span>
+              Dúvidas Frequentes sobre <span className="text-primary">Mudas de Goiaba</span>
             </h2>
             <p className="text-muted-foreground">
-              Tire suas dúvidas sobre nossas mudas, processo de compra e entrega.
+              Respostas claras sobre como comprar muda de goiaba enxertada, vantagens do porta-enxerto BRS Guaraçá / Araçá e entrega.
             </p>
           </div>
 
@@ -65,10 +60,10 @@ const FAQSection = () => {
                 value={`item-${index}`}
                 className="bg-card rounded-xl px-6 shadow-soft border-none"
               >
-                <AccordionTrigger className="text-left font-semibold hover:no-underline py-5">
+                <AccordionTrigger className="text-left font-semibold hover:no-underline py-5 text-foreground">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-5">
+                <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -78,13 +73,13 @@ const FAQSection = () => {
           {/* CTA */}
           <div className="text-center mt-10">
             <p className="text-muted-foreground mb-4">
-              Ainda tem dúvidas? Fale diretamente com nossa equipe!
+              Quer saber o <strong>preço da muda de goiaba</strong> para seu projeto ou tirar dúvidas técnicas?
             </p>
             <WhatsAppButton 
               size="lg"
-              message="Olá! Tenho algumas dúvidas sobre as mudas de goiabeira. Podem me ajudar?"
+              message="Olá! Vim pelo site e gostaria de consultar a disponibilidade e preço das mudas de goiaba enxertadas."
             >
-              Tirar Dúvidas pelo WhatsApp
+              Consultar Preço no WhatsApp
             </WhatsAppButton>
           </div>
         </div>

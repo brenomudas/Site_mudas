@@ -33,7 +33,6 @@ const Index = () => {
         <OtherProductsSection />
       </main>
       <Footer />
-      
     </div>
   );
 };

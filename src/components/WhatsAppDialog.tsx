@@ -53,9 +53,8 @@ const WhatsAppDialog = ({ open, onClose, whatsappUrl }: WhatsAppDialogProps) => 
         {/* Body */}
         <div className="px-6 py-6 md:py-8">
           <p className="text-foreground text-base md:text-lg font-medium text-center leading-relaxed">
-            Você deseja comprar com{" "}
-            <span className="text-[hsl(var(--primary))] font-bold">preço para produtor</span>?{" "}
-            <span className="text-muted-foreground">(+50 plantas)</span>
+            Você deseja comprar?
+            <span className="text-muted-foreground ">(Pedido mínimo de 50 plantas)</span>
           </p>
         </div>
 
@@ -66,7 +65,7 @@ const WhatsAppDialog = ({ open, onClose, whatsappUrl }: WhatsAppDialogProps) => 
             onClick={() => handleChoice(true)}
             className="flex-1 bg-[hsl(var(--whatsapp))] hover:bg-[hsl(var(--whatsapp-hover))] text-white font-bold text-base md:text-lg py-3.5 px-6 rounded-xl transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] shadow-cta"
           >
-            ✅ Sim
+            Sim
           </button>
           <button
             type="button"

@@ -1,12 +1,19 @@
 import { WhatsAppButton, PhoneDisplay } from "./WhatsAppButton";
-import logoSaoFrancisco from "@/assets/logo-sao-francisco-mudas.png";
+import logoSaoFrancisco from "@/assets/logo-sao-francisco-mudas.webp";
 import { Phone, Clock, MapPin } from "lucide-react";
+
 const FinalCTASection = () => {
-  return <section className="section-padding bg-gradient-to-br from-primary via-primary to-accent text-white">
+  return (
+    <section className="section-padding bg-gradient-to-br from-primary via-primary to-accent text-white">
       <div className="container-landing">
         <div className="max-w-4xl mx-auto text-center">
           {/* Logo */}
-          <img src={logoSaoFrancisco} alt="São Francisco Mudas" className="h-20 w-auto mx-auto mb-8 bg-white rounded-xl p-3" />
+          <img
+            src={logoSaoFrancisco}
+            alt="São Francisco Mudas"
+            className="h-20 w-auto mx-auto mb-8 bg-white rounded-xl p-3"
+            loading="lazy"
+          />
 
           {/* Headline */}
           <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6">
@@ -15,7 +22,7 @@ const FinalCTASection = () => {
           </h2>
 
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Não deixe os nematoides destruírem seu investimento. Comece com mudas 
+            Não deixe os nematoides destruírem seu investimento. Comece com mudas
             certificadas e suporte técnico especializado.
           </p>
 
@@ -46,6 +53,8 @@ const FinalCTASection = () => {
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default FinalCTASection;

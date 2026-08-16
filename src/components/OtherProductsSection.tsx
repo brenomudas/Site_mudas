@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight, Check, ZoomIn, Info } from "lucide-react";
 import { WhatsAppButton } from "./WhatsAppButton";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
-import imgManga1 from "@/assets/file_000000003398820ebfadde86b90076c6.png";
-import imgManga2 from "@/assets/IMG-20260728-WA0129.jpg";
-import imgManga3 from "@/assets/IMG-20260728-WA0131.jpg";
-import imgManga4 from "@/assets/IMG-20260728-WA0133.jpg";
-import imgManga5 from "@/assets/IMG-20260728-WA0135.jpg";
+import imgManga1 from "@/assets/file_000000003398820ebfadde86b90076c6.webp";
+import imgManga2 from "@/assets/IMG-20260728-WA0129.webp";
+import imgManga3 from "@/assets/IMG-20260728-WA0131.webp";
+import imgManga4 from "@/assets/IMG-20260728-WA0133.webp";
+import imgManga5 from "@/assets/IMG-20260728-WA0135.webp";
 
 const mangoImages = [
   {
@@ -159,6 +159,7 @@ const OtherProductsSection = () => {
               <img
                 src={mangoImages[currentIndex].src}
                 alt={mangoImages[currentIndex].alt}
+                loading="lazy"
                 className="w-full h-full object-cover object-center transition-all duration-500 ease-out transform group-hover:scale-105"
               />
 
@@ -225,6 +226,7 @@ const OtherProductsSection = () => {
                   <img
                     src={item.src}
                     alt={item.alt}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </button>
