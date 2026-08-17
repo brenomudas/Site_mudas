@@ -47,17 +47,16 @@ AddType text/plain .txt
   RewriteEngine On
   RewriteBase /
 
-  # 301 Redirects for Legacy Product URLs indexed in Google
-  RewriteRule ^produtos/produto/.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
-  RewriteRule ^produtos/.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
-  RewriteRule ^produto/.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
-  RewriteRule ^produtos$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
-  RewriteRule ^produto$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
+  # Case-insensitive 301 Redirects for Legacy Product URLs indexed in Google
+  RewriteCond %{REQUEST_URI} ^/produtos.* [NC,OR]
+  RewriteCond %{REQUEST_URI} ^/produto.* [NC,OR]
+  RewriteCond %{REQUEST_URI} (Goiabeira|Paluma|Tailandesa|BRS-Guaraca|Guaraca) [NC]
+  RewriteRule ^.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
 
   # 301 Redirects for Legacy Pages
-  RewriteRule ^empresa.*$ https://saofranciscomudas.com/#sobre [R=301,L,NE]
-  RewriteRule ^contato.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
-  RewriteRule ^index\.php$ https://saofranciscomudas.com/ [R=301,L]
+  RewriteRule ^empresa.*$ https://saofranciscomudas.com/#sobre [R=301,L,NC,NE]
+  RewriteRule ^contato.*$ https://saofranciscomudas.com/#mudas [R=301,L,NC,NE]
+  RewriteRule ^index\.php$ https://saofranciscomudas.com/ [R=301,L,NC]
 
   # SPA Fallback Rules
   RewriteRule ^sitemap\.xml$ - [L]

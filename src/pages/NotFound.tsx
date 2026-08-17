@@ -5,14 +5,14 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    // If user accesses any legacy route, auto-redirect to #mudas or home
-    if (location.pathname.includes("produto")) {
-      window.location.href = "https://saofranciscomudas.com/#mudas";
+    // Immediate 301 client-side redirect for any legacy product or page path
+    const path = location.pathname.toLowerCase();
+    if (path.includes("produto") || path.includes("goiaba") || path.includes("paluma")) {
+      window.location.replace("https://saofranciscomudas.com/#mudas");
+    } else if (path.includes("empresa") || path.includes("sobre")) {
+      window.location.replace("https://saofranciscomudas.com/#sobre");
     } else {
-      const timer = setTimeout(() => {
-        window.location.href = "https://saofranciscomudas.com/#mudas";
-      }, 2000);
-      return () => clearTimeout(timer);
+      window.location.replace("https://saofranciscomudas.com/#mudas");
     }
   }, [location.pathname]);
 
@@ -21,14 +21,8 @@ const NotFound = () => {
       <div className="max-w-md space-y-4 rounded-2xl bg-card p-8 border border-border shadow-card">
         <h1 className="text-3xl font-bold font-heading text-primary">São Francisco Mudas</h1>
         <p className="text-muted-foreground text-sm">
-          Redirecionando você para o nosso catálogo de mudas...
+          Redirecionando para o catálogo de mudas...
         </p>
-        <a 
-          href="/#mudas" 
-          className="inline-block px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-colors text-sm"
-        >
-          Ver Mudas de Goiaba e Mangueiras
-        </a>
       </div>
     </div>
   );
