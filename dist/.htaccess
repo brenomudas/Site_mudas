@@ -42,10 +42,24 @@ AddType text/plain .txt
   </FilesMatch>
 </IfModule>
 
-# Single Page Application (SPA) Fallback Rewrite Rules
+# 301 Permanent Redirects for Legacy URLs & Single Page Application (SPA) Fallback
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+
+  # 301 Redirects for Legacy Product URLs indexed in Google
+  RewriteRule ^produtos/produto/.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
+  RewriteRule ^produtos/.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
+  RewriteRule ^produto/.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
+  RewriteRule ^produtos$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
+  RewriteRule ^produto$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
+
+  # 301 Redirects for Legacy Pages
+  RewriteRule ^empresa.*$ https://saofranciscomudas.com/#sobre [R=301,L,NE]
+  RewriteRule ^contato.*$ https://saofranciscomudas.com/#mudas [R=301,L,NE]
+  RewriteRule ^index\.php$ https://saofranciscomudas.com/ [R=301,L]
+
+  # SPA Fallback Rules
   RewriteRule ^sitemap\.xml$ - [L]
   RewriteRule ^robots\.txt$ - [L]
   RewriteRule ^index\.html$ - [L]

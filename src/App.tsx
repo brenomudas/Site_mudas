@@ -16,6 +16,13 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          {/* Legacy 301 Client-Side Redirects */}
+          <Route path="/produtos/*" element={<Navigate to="/#mudas" replace />} />
+          <Route path="/produto/*" element={<Navigate to="/#mudas" replace />} />
+          <Route path="/produtos" element={<Navigate to="/#mudas" replace />} />
+          <Route path="/produto" element={<Navigate to="/#mudas" replace />} />
+          <Route path="/empresa" element={<Navigate to="/#sobre" replace />} />
+          <Route path="/contato" element={<Navigate to="/#mudas" replace />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
