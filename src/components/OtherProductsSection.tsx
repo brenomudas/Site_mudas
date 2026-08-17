@@ -160,6 +160,9 @@ const OtherProductsSection = () => {
                 src={mangoImages[currentIndex].src}
                 alt={mangoImages[currentIndex].alt}
                 loading="lazy"
+                decoding="async"
+                width={600}
+                height={450}
                 className="w-full h-full object-cover object-center transition-all duration-500 ease-out transform group-hover:scale-105"
               />
 

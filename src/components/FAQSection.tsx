@@ -9,12 +9,12 @@ import { WhatsAppButton } from "./WhatsAppButton";
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Por que a muda de goiaba enxertada no araçá / BRS Guaraçá é essencial?",
-      answer: "A muda de goiaba enxertada no porta-enxerto BRS Guaraçá (híbrido de araçazeiro desenvolvido pela EMBRAPA) é a única forma comprovada de proteger seu pomar contra o nematoide das galhas (Meloidogyne enterolobii). Ela combina a imunidade radicular do araçá com a altíssima produtividade das copas Paluma e Tailandesa."
+      question: "Por que a muda de goiaba enxertada no BRS Guaraçá é essencial?",
+      answer: "A muda de goiaba enxertada no porta-enxerto BRS Guaraçá (desenvolvido pela EMBRAPA) é a única forma comprovada de proteger seu pomar contra o nematoide das galhas (Meloidogyne enterolobii). Ela combina a resistência radicular do BRS Guaraçá com a altíssima produtividade das copas Paluma e Tailandesa."
     },
     {
       question: "Qual a diferença entre a muda de goiaba Paluma e a muda de goiaba Tailandesa enxertada?",
-      answer: "A muda de goiaba Paluma enxertada no araçá produz frutos de tamanho médio a grande com polpa vermelha intensa, sendo a mais plantada para a indústria e mercado in natura. Já a muda de goiaba tailandesa enxertada gera frutos gigantes (de 500g a 1kg) com polpa crocante, ideais para hortifrútis e feiras de alto valor agregado."
+      answer: "A muda de goiaba Paluma enxertada no BRS Guaraçá produz frutos de tamanho médio a grande com polpa vermelha intensa, sendo a mais plantada para a indústria e mercado in natura. Já a muda de goiaba tailandesa enxertada gera frutos gigantes (de 500g a 1kg) com polpa crocante, ideais para hortifrútis e feiras de alto valor agregado."
     },
     {
       question: "Como consultar o preço da muda de goiaba e comprar direto do viveiro?",
@@ -22,7 +22,7 @@ const FAQSection = () => {
     },
     {
       question: "Qual a vantagem de comprar muda de goiaba enxertada em relação ao pé-franco?",
-      answer: "A muda de pé-franco (produzida por estaquia) é suscetível ao nematoide e pode morrer em poucos anos se o solo estiver contaminado. A muda de goiabeira enxertada no araçá BRS Guaraçá une a força produtiva da copa com a resistência do porta-enxerto, garantindo a longevidade do pomar por mais de 15 a 20 anos."
+      answer: "A muda de pé-franco (produzida por estaquia) é suscetível ao nematoide e pode morrer em poucos anos se o solo estiver contaminado. A muda de goiabeira enxertada no BRS Guaraçá une a força produtiva da copa com a resistência do porta-enxerto, garantindo a longevidade do pomar por mais de 15 a 20 anos."
     },
     {
       question: "As mudas de goiaba chegam prontas para plantio?",
@@ -48,7 +48,7 @@ const FAQSection = () => {
               Dúvidas Frequentes sobre <span className="text-primary">Mudas de Goiaba</span>
             </h2>
             <p className="text-muted-foreground">
-              Respostas claras sobre como comprar muda de goiaba enxertada, vantagens do porta-enxerto BRS Guaraçá / Araçá e entrega.
+              Respostas claras sobre como comprar muda de goiaba enxertada, vantagens do porta-enxerto BRS Guaraçá e entrega.
             </p>
           </div>
 

@@ -54,6 +54,9 @@ const Header = () => {
               <img 
                 src={logoSaoFrancisco} 
                 alt="São Francisco Mudas" 
+                width={200}
+                height={96}
+                decoding="async"
                 className={`transition-all duration-300 object-contain ${
                   isScrolled 
                     ? "h-14 sm:h-16 lg:h-20 w-auto" 

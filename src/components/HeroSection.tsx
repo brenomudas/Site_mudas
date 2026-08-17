@@ -30,7 +30,7 @@ const HeroSection = () => {
 
             {/* Subheadline */}
             <p className="text-lg md:text-xl text-white/90 max-w-xl">
-              <strong>Resistência comprovada a nematoides</strong> com porta-enxerto BRS Guaraçá (Araçá). Mudas de goiaba Paluma e Tailandesa com tecnologia EMBRAPA.
+              <strong>Resistência comprovada a nematoides</strong> com porta-enxerto BRS Guaraçá. Mudas de goiaba Paluma e Tailandesa com tecnologia EMBRAPA.
             </p>
 
             {/* Trust badges */}
@@ -59,10 +59,14 @@ const HeroSection = () => {
             <div className="relative float-animation">
               <div className="absolute -inset-4 bg-white/20 rounded-3xl blur-2xl" />
               <img
-                alt="Muda de goiaba Paluma enxertada no araçá BRS Guaraçá - São Francisco Mudas"
+                alt="Muda de goiaba Paluma enxertada no BRS Guaraçá - São Francisco Mudas"
                 className="relative w-72 md:w-80 lg:w-96 h-auto rounded-2xl shadow-elevated"
                 src="/lovable-uploads/12bbb4e2-2444-493f-9410-441644b7804c.webp"
                 loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width={384}
+                height={384}
               />
 
               {/* EMBRAPA Seal Floating Badge - Top Left */}
@@ -74,6 +78,10 @@ const HeroSection = () => {
                   src={seloEmbrapa}
                   alt="Tecnologia EMBRAPA"
                   className="h-16 md:h-20 lg:h-24 w-auto object-contain"
+                  loading="eager"
+                  decoding="async"
+                  width={96}
+                  height={96}
                 />
               </div>
 

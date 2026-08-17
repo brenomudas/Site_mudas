@@ -13,6 +13,9 @@ const FinalCTASection = () => {
             alt="São Francisco Mudas"
             className="h-20 w-auto mx-auto mb-8 bg-white rounded-xl p-3"
             loading="lazy"
+            decoding="async"
+            width={200}
+            height={80}
           />
 
           {/* Headline */}

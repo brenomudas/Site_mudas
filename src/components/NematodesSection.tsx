@@ -15,7 +15,7 @@ const NematodesSection = () => {
     {
       icon: ShieldCheck,
       title: "Resistência Total a Nematoides",
-      description: "O porta-enxerto BRS Guaraçá (Araçá) apresenta imunidade genética ao Meloidogyne enterolobii."
+      description: "O porta-enxerto BRS Guaraçá apresenta resistência genética ao Meloidogyne enterolobii."
     },
     {
       icon: Timer,
@@ -42,7 +42,7 @@ const NematodesSection = () => {
           </h2>
           <p className="text-muted-foreground max-w-3xl mx-auto text-base sm:text-lg">
             O nematoide das galhas (<em>Meloidogyne enterolobii</em>) devasta pomares de pé-franco. 
-            A única solução definitiva é o plantio de <strong>mudas de goiaba enxertadas no BRS Guaraçá (Araçá)</strong>.
+            A única solução definitiva é o plantio de <strong>mudas de goiaba enxertadas no BRS Guaraçá</strong>.
           </p>
         </div>
 

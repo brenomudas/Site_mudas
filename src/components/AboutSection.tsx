@@ -19,7 +19,7 @@ const AboutSection = () => {
             Viveiro de Mudas de Goiaba <span className="text-primary">São Francisco Mudas</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-base">
-            Referência nacional na produção e venda de muda de goiaba Paluma enxertada no araçá e muda de goiaba tailandesa com garantia genética EMBRAPA.
+            Referência nacional na produção e venda de muda de goiaba Paluma enxertada no BRS Guaraçá e muda de goiaba tailandesa com garantia genética EMBRAPA.
           </p>
         </div>
 
@@ -32,6 +32,9 @@ const AboutSection = () => {
               className="w-full rounded-2xl shadow-elevated"
               src="/lovable-uploads/a3f2cf2e-ea07-491c-b4f0-9c7eb7197f57.webp"
               loading="lazy"
+              decoding="async"
+              width={600}
+              height={400}
             />
             <div className="absolute -bottom-6 -right-6 bg-card rounded-xl shadow-card p-4 border border-border">
               <img
@@ -39,6 +42,9 @@ const AboutSection = () => {
                 className="h-16 w-auto"
                 src="/lovable-uploads/ad49dabe-36f5-4b5c-8b64-07192fbf8f45.webp"
                 loading="lazy"
+                decoding="async"
+                width={150}
+                height={64}
               />
             </div>
           </div>
@@ -55,7 +61,7 @@ const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground leading-relaxed">
-              Nosso carro-chefe é a <strong>muda de goiaba Paluma enxertada no araçá (BRS Guaraçá)</strong> e a <strong>muda de goiaba tailandesa enxertada BRS Guaraçá</strong>. Essa combinação proporciona 100% de resistência ao nematoide das galhas (<em>Meloidogyne enterolobii</em>), salvando pomares de goiaba em diversas regiões do país.
+              Nosso carro-chefe é a <strong>muda de goiaba Paluma enxertada no BRS Guaraçá</strong> e a <strong>muda de goiaba tailandesa enxertada no BRS Guaraçá</strong>. Essa combinação proporciona 100% de resistência ao nematoide das galhas (<em>Meloidogyne enterolobii</em>), salvando pomares de goiaba em diversas regiões do país.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">

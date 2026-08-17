@@ -15,6 +15,9 @@ const Footer = () => {
               className="h-12 w-auto bg-white rounded-lg p-2"
               src="/lovable-uploads/5517861d-1eea-4aeb-8be8-990ba3a36f87.webp"
               loading="lazy"
+              decoding="async"
+              width={120}
+              height={48}
             />
             <div>
               <p className="font-heading font-semibold text-white">São Francisco Mudas</p>

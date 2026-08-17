@@ -56,6 +56,9 @@ const AuthoritySection = () => {
               className="w-32 h-32 object-contain"
               src="/lovable-uploads/5a8da977-d484-4b34-bf5c-dab940a8a104.webp"
               loading="lazy"
+              decoding="async"
+              width={128}
+              height={128}
             />
             <div className="flex-1 text-center md:text-left">
               <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4">

@@ -84,6 +84,9 @@ const LogisticsSection = () => {
               className="relative w-full rounded-2xl shadow-elevated"
               src="/lovable-uploads/32956fc3-a7ae-4667-9d59-827a5ea5ab60.webp"
               loading="lazy"
+              decoding="async"
+              width={600}
+              height={400}
             />
           </div>
         </div>

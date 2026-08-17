@@ -7,11 +7,11 @@ const varieties = [
     id: "paluma",
     name: "Goiaba Paluma Enxertada",
     badge: "Mais Vendida",
-    subhead: "Porta-Enxerto BRS Guaraçá (Araçá)",
+    subhead: "Porta-Enxerto BRS Guaraçá",
     description:
       "A cultivar mais plantada no Brasil. Destaca-se pela altíssima produtividade, frutos de polpa vermelha espessa e excelente aceitação no mercado in natura e industrial.",
     image: "/lovable-uploads/4c636a85-42c2-4cd0-8c2d-fc36968a0086.webp",
-    imageAlt: "Muda de goiaba Paluma enxertada no araçá BRS Guaraçá - São Francisco Mudas",
+    imageAlt: "Muda de goiaba Paluma enxertada no BRS Guaraçá - São Francisco Mudas",
     specifications: [
       { label: "Copa", value: "Goiaba Paluma" },
       { label: "Porta-enxerto", value: "BRS Guaraçá (EMBRAPA)" },
@@ -35,11 +35,11 @@ const varieties = [
     id: "tailandesa",
     name: "Goiaba Tailandesa Enxertada",
     badge: "Frutos Gigantes",
-    subhead: "Porta-Enxerto BRS Guaraçá (Araçá)",
+    subhead: "Porta-Enxerto BRS Guaraçá",
     description:
       "Ideal para o mercado in natura premium. Produz frutos gigantes (500g a 1kg) de polpa crocante, sabor suave e altíssimo valor agregado.",
     image: "/lovable-uploads/12bbb4e2-2444-493f-9410-441644b7804c.webp",
-    imageAlt: "Muda de goiaba tailandesa enxertada no araçá BRS Guaraçá - São Francisco Mudas",
+    imageAlt: "Muda de goiaba tailandesa enxertada no BRS Guaraçá - São Francisco Mudas",
     specifications: [
       { label: "Copa", value: "Goiaba Tailandesa" },
       { label: "Porta-enxerto", value: "BRS Guaraçá (EMBRAPA)" },
@@ -77,7 +77,7 @@ const ProductSection = () => {
             Mudas de Goiaba <span className="text-primary">Enxertadas</span>
           </h2>
           <p className="text-muted-foreground text-base sm:text-lg">
-            Cultivadas com rigor técnico no porta-enxerto BRS Guaraçá (Araçá).
+            Cultivadas com rigor técnico no porta-enxerto BRS Guaraçá.
           </p>
 
           {/* Variety Selector Tabs - Equal width and height grid */}
@@ -116,6 +116,9 @@ const ProductSection = () => {
               src={activeVariety.image}
               alt={activeVariety.imageAlt}
               loading="lazy"
+              decoding="async"
+              width={448}
+              height={336}
               className="relative w-full max-w-md mx-auto rounded-2xl shadow-elevated object-cover aspect-[4/3]"
             />
 
@@ -124,7 +127,7 @@ const ProductSection = () => {
               <div className="flex items-start gap-3">
                 <Info className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <p className="text-xs sm:text-sm text-muted-foreground">
-                  <strong className="text-foreground">Material EMBRAPA:</strong> Imunidade comprovada contra o nematoide <em>Meloidogyne enterolobii</em>.
+                  <strong className="text-foreground">Material EMBRAPA:</strong> Resistência comprovada contra o nematoide <em>Meloidogyne enterolobii</em>.
                 </p>
               </div>
             </div>
