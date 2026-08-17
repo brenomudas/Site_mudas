@@ -146,9 +146,21 @@ const ProductSection = () => {
               <h3 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mt-2 mb-2">
                 {activeVariety.name}
               </h3>
-              <p className="text-muted-foreground text-sm sm:text-base leading-relaxed">
+              <p className="text-muted-foreground text-sm sm:text-base leading-relaxed mb-4">
                 {activeVariety.description}
               </p>
+
+              {/* Price & Minimum Order Banner */}
+              <div className="p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex flex-wrap items-center justify-between gap-3 shadow-sm">
+                <div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-emerald-800">Preço Especial</span>
+                  <p className="font-heading font-bold text-2xl text-emerald-700">R$ 12,90 <span className="text-sm font-normal text-muted-foreground">/ muda</span></p>
+                </div>
+                <div className="text-right">
+                  <span className="text-xs text-muted-foreground font-medium">Condição</span>
+                  <p className="text-sm font-bold text-foreground">Pedido mínimo: 50 mudas</p>
+                </div>
+              </div>
             </div>
 
             {/* Technical Specifications - Perfectly Aligned Grid */}
