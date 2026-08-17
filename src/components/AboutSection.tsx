@@ -5,7 +5,7 @@ import { MapPin, Users, Award, Target, Youtube } from "lucide-react";
 const AboutSection = () => {
   const stats = [
     { value: "30+", label: "Anos no Mercado" },
-    { value: "15MM+", label: "Mudas de Goiaba Produzidas" },
+    { value: "15MM+", label: "Mudas Produzidas" },
     { value: "7K+", label: "Produtores Atendidos" },
     { value: "15", label: "Estados Alcançados" },
   ];
