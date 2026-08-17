@@ -22,7 +22,7 @@ const LogisticsSection = () => {
     {
       icon: Clock,
       title: "Prazo Ágil",
-      description: "Despacho em até 48h após confirmação do pagamento",
+      description: "Rápida chegada ao destino!",
     },
   ];
   const regions = ["Nordeste", "Sudeste", "Centro-Oeste", "Sul", "Norte"];

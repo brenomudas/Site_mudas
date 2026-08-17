@@ -117,6 +117,18 @@ const OtherProductsSection = () => {
                   Nossas mudas de mangueira passam por rigoroso controle no viveiro, garantindo um desenvolvimento uniforme,
                   tronco estruturado e raízes sadias prontas para absorver nutrientes assim que plantadas.
                 </p>
+
+                {/* Price & Minimum Order Banner */}
+                <div className="mb-6 p-4 rounded-xl bg-amber-500/10 border border-amber-500/20 flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-amber-800">Preço Especial</span>
+                    <p className="font-heading font-bold text-2xl text-amber-700">R$ 7,80 <span className="text-sm font-normal text-muted-foreground">/ muda</span></p>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-xs text-muted-foreground">Condição</span>
+                    <p className="text-sm font-medium text-foreground">Pedido mínimo: 50 mudas</p>
+                  </div>
+                </div>
               </div>
 
               {/* Grid of features */}

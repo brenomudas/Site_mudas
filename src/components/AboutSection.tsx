@@ -16,7 +16,7 @@ const AboutSection = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Viveiro de Mudas de Goiaba <span className="text-primary">São Francisco Mudas</span>
+            Viveiro de Mudas <span className="text-primary">São Francisco Mudas</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-base">
             Referência nacional na produção e venda de muda de goiaba Paluma enxertada no BRS Guaraçá e muda de goiaba tailandesa com garantia genética EMBRAPA.
@@ -28,7 +28,7 @@ const AboutSection = () => {
           {/* Image */}
           <div className="relative">
             <img
-              alt="Viveiro de mudas de goiaba São Francisco Mudas em Petrolina PE"
+              alt="Viveiro de mudas São Francisco Mudas em Petrolina PE"
               className="w-full rounded-2xl shadow-elevated"
               src="/lovable-uploads/a3f2cf2e-ea07-491c-b4f0-9c7eb7197f57.webp"
               loading="lazy"
@@ -57,7 +57,7 @@ const AboutSection = () => {
             </div>
 
             <p className="text-lg text-foreground leading-relaxed">
-              A <strong>São Francisco Mudas</strong> é um <strong>viveiro de mudas de goiaba</strong> com mais de 30 anos de atuação sob liderança de Haroldo de Carvalho Neves. Somos especialistas no cultivo, propagação e <strong>venda de mudas de goiaba</strong> de alto rendimento para fruticultores de todo o Brasil.
+              A <strong>São Francisco Mudas</strong> é um <strong>viveiro de mudas </strong> com mais de 30 anos de atuação sob liderança de Haroldo de Carvalho Neves. Somos especialistas no cultivo, propagação e <strong>venda de mudas de goiaba</strong> de alto rendimento para fruticultores de todo o Brasil.
             </p>
 
             <p className="text-muted-foreground leading-relaxed">

@@ -15,6 +15,8 @@ const varieties = [
     specifications: [
       { label: "Copa", value: "Goiaba Paluma" },
       { label: "Porta-enxerto", value: "BRS Guaraçá (EMBRAPA)" },
+      { label: "Preço unitário", value: "R$ 12,90 cada" },
+      { label: "Pedido mínimo", value: "50 mudas" },
       { label: "Resistência", value: "100% Resistente a Nematoides" },
       { label: "Altura", value: "30 a 40 cm" },
       { label: "Idade", value: "120 dias pós-enxertia" },
@@ -43,6 +45,8 @@ const varieties = [
     specifications: [
       { label: "Copa", value: "Goiaba Tailandesa" },
       { label: "Porta-enxerto", value: "BRS Guaraçá (EMBRAPA)" },
+      { label: "Preço unitário", value: "R$ 12,90 cada" },
+      { label: "Pedido mínimo", value: "50 mudas" },
       { label: "Resistência", value: "100% Resistente a Nematoides" },
       { label: "Peso do fruto", value: "500g a 1.000g" },
       { label: "Idade", value: "120 dias pós-enxertia" },

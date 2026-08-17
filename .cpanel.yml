@@ -3,3 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home2/brenod91/public_html
     - /bin/cp -R dist/* $DEPLOYPATH
+    - /bin/cp dist/.htaccess $DEPLOYPATH/.htaccess
