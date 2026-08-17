@@ -1,9 +1,13 @@
+# Ensure correct MIME types for Sitemap & Robots
+AddType application/xml .xml
+AddType text/plain .txt
+
 # Turn on Compression (Gzip / Deflate)
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/json image/svg+xml image/x-icon
 </IfModule>
 
-# Cache-Control Headers for Static Files (Fixes "Cache TTL: None")
+# Cache-Control Headers for Static Files
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresDefault "access plus 1 month"
@@ -42,6 +46,8 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
+  RewriteRule ^sitemap\.xml$ - [L]
+  RewriteRule ^robots\.txt$ - [L]
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
