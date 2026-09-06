@@ -1,4 +1,4 @@
-import { pushToDataLayer } from "@/lib/analytics";
+import { pushToDataLayer, trackWhatsAppClick } from "@/lib/analytics";
 import { createPortal } from "react-dom";
 
 interface WhatsAppDialogProps {
@@ -12,10 +12,14 @@ const WhatsAppDialog = ({ open, onClose, whatsappUrl }: WhatsAppDialogProps) => 
 
   const handleChoice = (choice: boolean) => {
     if (choice) {
+      // 1. Evento personalizado para acionador no Google Tag Manager (GTM)
       pushToDataLayer({
         event: "click_50pl",
         timestamp: new Date().toISOString(),
       });
+
+      // 2. Eventos diretos de conversão (Google Ads gtag + Meta Pixel)
+      trackWhatsAppClick("modal_sim");
 
       // Fecha o diálogo
       onClose();

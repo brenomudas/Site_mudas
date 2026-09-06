@@ -19,7 +19,8 @@ export const WhatsAppButton = ({
   size = "lg",
   showIcon = true,
   variant = "whatsapp",
-  iconClassName
+  iconClassName,
+  id = "whatsapp-normal",
 }: {
   children: React.ReactNode;
   message?: string;
@@ -28,6 +29,7 @@ export const WhatsAppButton = ({
   showIcon?: boolean;
   variant?: "whatsapp" | "whatsapp-outline";
   iconClassName?: string;
+  id?: string;
 }) => {
   const [dialogOpen, setDialogOpen] = useState(false);
 
@@ -66,6 +68,7 @@ export const WhatsAppButton = ({
   return (
     <>
       <a
+        id={id}
         href={getWhatsAppLink(message)}
         onClick={handleClick}
         className={cn(
