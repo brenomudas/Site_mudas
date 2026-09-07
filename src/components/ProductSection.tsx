@@ -200,6 +200,7 @@ const ProductSection = () => {
             {/* CTA */}
             <div className="pt-2">
               <WhatsAppButton
+                id="whatsapp-produtos"
                 size="lg"
                 className="w-full sm:w-auto"
                 message={activeVariety.whatsappMsg}

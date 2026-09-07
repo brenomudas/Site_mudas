@@ -27,7 +27,7 @@ export const WhatsAppButton = ({
   className?: string;
   size?: "sm" | "lg" | "xl";
   showIcon?: boolean;
-  variant?: "whatsapp" | "whatsapp-outline";
+  variant?: "whatsapp" | "whatsapp-outline" | "link";
   iconClassName?: string;
   id?: string;
 }) => {
@@ -49,8 +49,11 @@ export const WhatsAppButton = ({
 
   const variantClasses = {
     whatsapp: "bg-whatsapp hover:bg-whatsapp-hover text-white shadow-cta whatsapp-pulse",
-    "whatsapp-outline": "border-2 border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-white"
+    "whatsapp-outline": "border-2 border-whatsapp text-whatsapp hover:bg-whatsapp hover:text-white",
+    link: "text-white/70 hover:text-white transition-colors bg-transparent border-none p-0 shadow-none font-normal"
   };
+
+  const activeSizeClass = variant === "link" ? "" : sizeClasses[size];
 
   const handleClick = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -73,7 +76,7 @@ export const WhatsAppButton = ({
         onClick={handleClick}
         className={cn(
           "inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-all duration-150 cursor-pointer",
-          sizeClasses[size],
+          activeSizeClass,
           variantClasses[variant],
           className
         )}

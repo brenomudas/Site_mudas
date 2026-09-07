@@ -71,7 +71,7 @@ const LogisticsSection = () => {
               </div>
             </div>
 
-            <WhatsAppButton size="lg" message="Olá! Gostaria de saber sobre frete e prazos de entrega para minha região.">
+            <WhatsAppButton id="whatsapp-logistica" size="lg" message="Olá! Gostaria de saber sobre frete e prazos de entrega para minha região.">
               Consultar Frete e Prazo
             </WhatsAppButton>
           </div>

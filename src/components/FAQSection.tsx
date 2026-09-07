@@ -76,6 +76,7 @@ const FAQSection = () => {
               Quer saber o <strong>preço da muda de goiaba</strong> para seu projeto ou tirar dúvidas técnicas?
             </p>
             <WhatsAppButton 
+              id="whatsapp-faq"
               size="lg"
               message="Olá! Vim pelo site e gostaria de consultar a disponibilidade e preço das mudas de goiaba enxertadas."
             >

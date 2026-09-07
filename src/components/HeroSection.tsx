@@ -47,7 +47,7 @@ const HeroSection = () => {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <WhatsAppButton size="xl" message="Olá! Gostaria de solicitar um orçamento para mudas de goiaba enxertadas no BRS Guaraçá.">
+              <WhatsAppButton id="whatsapp-hero" size="xl" message="Olá! Gostaria de solicitar um orçamento para mudas de goiaba enxertadas no BRS Guaraçá.">
                 Solicitar Orçamento
               </WhatsAppButton>
               <PhoneDisplay className="text-white/80 hover:text-white" />

@@ -150,6 +150,7 @@ const OtherProductsSection = () => {
             {/* CTA Button */}
             <div className="pt-0 sm:pt-2">
               <WhatsAppButton 
+                id="whatsapp-manga"
                 size="xl" 
                 iconClassName="w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0"
                 className="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white shadow-xl py-4 sm:py-5 px-6 sm:px-8 text-base sm:text-lg font-bold gap-3 rounded-2xl active:scale-[0.98] transition-all"

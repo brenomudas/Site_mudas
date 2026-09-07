@@ -29,7 +29,7 @@ const SupportSection = () => {
                   <p className="text-sm text-muted-foreground mb-2">
                     Atendimento rápido e personalizado para tirar suas dúvidas
                   </p>
-                  <WhatsAppButton size="sm" variant="whatsapp-outline">
+                  <WhatsAppButton id="whatsapp-suporte-direto" size="sm" variant="whatsapp-outline">
                     (87) 99649-4036
                   </WhatsAppButton>
                 </div>
@@ -91,6 +91,7 @@ const SupportSection = () => {
                 Pronto para começar seu projeto?
               </p>
               <WhatsAppButton 
+                id="whatsapp-suporte-equipe"
                 variant="whatsapp"
                 size="lg"
                 className="justify-center mr-auto"

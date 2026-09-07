@@ -97,6 +97,7 @@ const NematodesSection = () => {
             Consulte a disponibilidade e solicite orçamento para mudas enxertadas no BRS Guaraçá.
           </p>
           <WhatsAppButton 
+            id="whatsapp-nematoides"
             size="xl"
             message="Olá! Quero proteger meu pomar com mudas de goiaba resistentes a nematoides enxertadas no BRS Guaraçá."
           >

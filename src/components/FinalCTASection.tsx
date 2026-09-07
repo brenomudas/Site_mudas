@@ -31,7 +31,7 @@ const FinalCTASection = () => {
 
           {/* Main CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <WhatsAppButton size="xl" className="text-lg" message="Olá! Quero fazer um pedido de mudas de goiabeira Paluma enxertadas no BRS Guaraçá.">
+            <WhatsAppButton id="whatsapp-final-cta" size="xl" className="text-lg" message="Olá! Quero fazer um pedido de mudas de goiabeira Paluma enxertadas no BRS Guaraçá.">
               Compre agora
             </WhatsAppButton>
           </div>
